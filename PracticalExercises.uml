@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_YNKi4LZyEfGhY-xwGMoRiw" name="PracticalExercises">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_YX9doLZyEfGhY-xwGMoRiw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_BAS-MLZzEfGhY-xwGMoRiw" name="customer" visibility="package"/>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_U76_ILZzEfGhY-xwGMoRiw" name="MobileShopping-Customer" useCase="_Z-SFwLZzEfGhY-xwGMoRiw _em4BgLZzEfGhY-xwGMoRiw _iAYT8LZzEfGhY-xwGMoRiw _ifl_gLZzEfGhY-xwGMoRiw">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_NMGzwLZzEfGhY-xwGMoRiw" name="FindProductLocation">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_iDuGYLZ0EfGhY-xwGMoRiw" name="ExtensionPoint1"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Z-SFwLZzEfGhY-xwGMoRiw" name="OrderProduct" subject="_U76_ILZzEfGhY-xwGMoRiw">
+      <include xmi:type="uml:Include" xmi:id="_k49OILZ0EfGhY-xwGMoRiw" addition="_ifl_gLZzEfGhY-xwGMoRiw"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_em4BgLZzEfGhY-xwGMoRiw" name="MakeReview" subject="_U76_ILZzEfGhY-xwGMoRiw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_iAYT8LZzEfGhY-xwGMoRiw" name="ViewProductInfo" subject="_U76_ILZzEfGhY-xwGMoRiw">
+      <extend xmi:type="uml:Extend" xmi:id="_iDs4QLZ0EfGhY-xwGMoRiw" extendedCase="_NMGzwLZzEfGhY-xwGMoRiw" extensionLocation="_iDuGYLZ0EfGhY-xwGMoRiw"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_ifl_gLZzEfGhY-xwGMoRiw" name="MakePayment" subject="_U76_ILZzEfGhY-xwGMoRiw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uedv0LZ0EfGhY-xwGMoRiw" memberEnd="_ueeW4rZ0EfGhY-xwGMoRiw _uee98LZ0EfGhY-xwGMoRiw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ueeW4LZ0EfGhY-xwGMoRiw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ueeW4bZ0EfGhY-xwGMoRiw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ueeW4rZ0EfGhY-xwGMoRiw" name="usecase3" type="_NMGzwLZzEfGhY-xwGMoRiw" association="_uedv0LZ0EfGhY-xwGMoRiw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uee98LZ0EfGhY-xwGMoRiw" name="customer" type="_BAS-MLZzEfGhY-xwGMoRiw" association="_uedv0LZ0EfGhY-xwGMoRiw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_v_fdsLZ0EfGhY-xwGMoRiw" memberEnd="_v_gEwrZ0EfGhY-xwGMoRiw _v_gr0LZ0EfGhY-xwGMoRiw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_v_gEwLZ0EfGhY-xwGMoRiw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_v_gEwbZ0EfGhY-xwGMoRiw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_v_gEwrZ0EfGhY-xwGMoRiw" name="usecase2" type="_Z-SFwLZzEfGhY-xwGMoRiw" association="_v_fdsLZ0EfGhY-xwGMoRiw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_v_gr0LZ0EfGhY-xwGMoRiw" name="customer" type="_BAS-MLZzEfGhY-xwGMoRiw" association="_v_fdsLZ0EfGhY-xwGMoRiw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0WyOELZ0EfGhY-xwGMoRiw" memberEnd="_0WzcMrZ0EfGhY-xwGMoRiw _0W0DQLZ0EfGhY-xwGMoRiw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0WzcMLZ0EfGhY-xwGMoRiw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0WzcMbZ0EfGhY-xwGMoRiw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0WzcMrZ0EfGhY-xwGMoRiw" name="usecase3" type="_em4BgLZzEfGhY-xwGMoRiw" association="_0WyOELZ0EfGhY-xwGMoRiw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0W0DQLZ0EfGhY-xwGMoRiw" name="customer" type="_BAS-MLZzEfGhY-xwGMoRiw" association="_0WyOELZ0EfGhY-xwGMoRiw"/>
+  </packagedElement>
+</uml:Model>
